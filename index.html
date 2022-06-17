@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập JS tổng hợp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="container title">
+        <h1>Một số bài tập javascript</h1>
+    </section>
+    <section class="container">
+        <div class="btn">
+            <button>
+                <i class="fa fa-book"></i>
+                <i class="fa fa-book-open"></i>
+                <span>Bài 1</span>
+            </button>
+            <button>
+                <i class="fa fa-book"></i>
+                <i class="fa fa-book-open"></i>
+                <span>Bài 2</span>
+            </button>
+            <button>
+                <i class="fa fa-book"></i>
+                <i class="fa fa-book-open"></i>
+                <span>Bài 3</span>
+            </button>
+            <button>
+                <i class="fa fa-book"></i>
+                <i class="fa fa-book-open"></i>
+                <span>Bài 4</span>
+            </button>
+            <button>
+                <i class="fa fa-book"></i>
+                <i class="fa fa-book-open"></i>
+                <span>Bài 5</span>
+            </button>
+            <button>
+                <i class="fa fa-book"></i>
+                <i class="fa fa-book-open"></i>
+                <span>Bài 6</span>
+            </button>
+            <button>
+                <i class="fa fa-book"></i>
+                <i class="fa fa-book-open"></i>
+                <span>Bài 7</span>
+            </button>
+            <button>
+                <i class="fa fa-book"></i>
+                <i class="fa fa-book-open"></i>
+                <span>Bài 8</span>
+            </button>
+            <button>
+                <i class="fa fa-book"></i>
+                <i class="fa fa-book-open"></i>
+                <span>Bài 9</span>
+            </button>
+            <button>
+                <i class="fa fa-book"></i>
+                <i class="fa fa-book-open"></i>
+                <span>Bài 10</span>
+            </button>
+            <button>
+                <i class="fa fa-book"></i>
+                <i class="fa fa-book-open"></i>
+                <span>Bài 11</span>
+            </button>
+            <button>
+                <i class="fa fa-book"></i>
+                <i class="fa fa-book-open"></i>
+                <span>Bài 12</span>
+            </button>
+            <button>
+                <i class="fa fa-book"></i>
+                <i class="fa fa-book-open"></i>
+                <span>Bài 13</span>
+            </button>
+            <button>
+                <i class="fa fa-book"></i>
+                <i class="fa fa-book-open"></i>
+                <span>Bài 14</span>
+            </button>
+            <button>
+                <i class="fa fa-book"></i>
+                <i class="fa fa-book-open"></i>
+                <span>Bài 15</span>
+            </button>
+            <button>
+                <i class="fa fa-book"></i>
+                <i class="fa fa-book-open"></i>
+                <span>Bài 16</span>
+            </button>
+            <button>
+                <i class="fa fa-book"></i>
+                <i class="fa fa-book-open"></i>
+                <span>Bài 17</span>
+            </button>
+
+        </div>
+        <div class="content">
+            <div class="bai animate__animated animate__fadeIn">
+                <h1>Bài 1: Tính diện tích chu vi hình chữ nhật</h1>
+                <input type="number" id="b1_chieuDai" placeholder="Nhập chiều dài">
+                <input type="number" id="b1_chieuRong" placeholder="Nhập chiều rộng">
+                <br><button id="btn_bai1">Tính</button>
+                <div class="ketqua">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span class="kqBai1"></span>
+                </div>
+            </div>
+
+            <div class="bai animate__animated animate__fadeIn">
+                <h1>Bài 2: Tính tổng các ký số của số nhỏ hơn 4 chữ số</h1>
+                <input type="number" id="b2_so" placeholder="Nhập số">
+                <br><button id="btn_bai2">Tính</button>
+                <div class="ketqua">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span class="kqBai2"></span>
+                </div>
+            </div>
+
+            <div class="bai animate__animated animate__fadeIn">
+                <h1>Bài 3: Sắp xếp 3 số nguyên tăng dần</h1>
+                <input type="number" id="b3_soThu1" placeholder="Số thứ nhất">
+                <input type="number" id="b3_soThu2" placeholder="Số thứ hai">
+                <input type="number" id="b3_soThu3" placeholder="Số thứ ba">
+                <br><button id="btn_bai3">Xếp</button>
+                <div class="ketqua">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span class="kqBai3"></span>
+                </div>
+            </div>
+
+            <div class="bai animate__animated animate__fadeIn">
+                <h1>Bài 4: Chương trình chào hỏi</h1>
+                <select id="b4_cacThanhVien">
+                    <option value="">Chọn thành viên</option>
+                    <option value="bo">Bố</option>
+                    <option value="me">Mẹ</option>
+                    <option value="anhTrai">Anh Trai</option>
+                    <option value="emGai">Em Gái</option>
+                </select>
+                <button id="btn_bai4">Gửi lời chào</button>
+                <div class="ketqua">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span class="kqBai4"></span>
+                </div>
+            </div>
+
+            <div class="bai animate__animated animate__fadeIn">
+                <h1>Bài 5: Đếm số chẵn, số lẻ</h1>
+                <input type="number" id="b5_soThu1" placeholder="Số thứ nhất">
+                <input type="number" id="b5_soThu2" placeholder="Số thứ hai">
+                <input type="number" id="b5_soThu3" placeholder="Số thứ ba">
+                <br><button id="btn_bai5">Đếm</button>
+                <div class="ketqua">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span class="kqBai5"></span>
+                </div>
+            </div>
+
+            <div class="bai animate__animated animate__fadeIn">
+                <h1>Bài 6: Nhận biết tam giác</h1>
+                <input type="number" id="b6_canh1" placeholder="Độ dài cạnh 1">
+                <input type="number" id="b6_canh2" placeholder="Độ dài cạnh 2">
+                <input type="number" id="b6_canh3" placeholder="Độ dài cạnh 3">
+                <br><button id="btn_bai6">Dự đoán</button>
+                <div class="ketqua">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span class="kqBai6"></span>
+                </div>
+            </div>
+
+            <div class="bai animate__animated animate__fadeIn">
+                <h1>Bài 7: Tìm ngày tháng</h1>
+                <input type="number" id="b7_ngay" placeholder="Nhập ngày">
+                <input type="number" id="b7_thang" placeholder="Nhập tháng">
+                <input type="number" id="b7_nam" placeholder="Nhập năm">
+                <br><button id="btn_bai71">Ngày hôm qua</button>
+                <button id="btn_bai72">Ngày mai</button>
+                <div class="ketqua">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span class="kqBai7"></span>
+                </div>
+            </div>
+
+            <div class="bai animate__animated animate__fadeIn">
+                <h1>Bài 8: Đếm số ngày trong tháng</h1>
+                <input type="number" id="b8_thang" placeholder="Nhập tháng">
+                <input type="number" id="b8_nam" placeholder="Nhập năm">
+                <br><button id="btn_bai8">Đếm</button>
+                <div class="ketqua">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span class="kqBai8"></span>
+                </div>
+            </div>
+
+            <div class="bai animate__animated animate__fadeIn">
+                <h1>Bài 9: Đọc số nhỏ hơn 4 chữ số </h1>
+                <input type="number" id="b9_so" placeholder="Nhập số">
+                <br><button id="btn_bai9">Đọc</button>
+                <div class="ketqua">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span class="kqBai9"></span>
+                </div>
+            </div>
+
+            <div class="bai animate__animated animate__fadeIn">
+                <h1>Bài 10: Quản lý tuyển sinh, Đậu nếu tổng điểm lớn hơn hoặc bằng điểm chuẩn và không có điểm môn nào bằng 0</h1>
+                <input type="number" id="b10_diemChuan" placeholder="Nhập điểm chuẩn">
+                <select id="b10_khuVuc">
+                    <option value="0">Chọn khu vực</option>
+                    <option value="2">Khu vực A</option>
+                    <option value="1">Khu vực B</option>
+                    <option value="0.5">Khu vực C</option>
+                </select>
+                <select id="b10_doiTuong">
+                    <option value="0">Chọn đối tượng</option>
+                    <option value="2.5">Đối tượng 1</option>
+                    <option value="1.5">Đối tượng 2</option>
+                    <option value="1">Đối tượng 3</option>
+                </select>
+                <input type="number" id="b10_diemMon1" placeholder="Điểm môn 1">
+                <input type="number" id="b10_diemMon2" placeholder="Điểm môn 2">
+                <input type="number" id="b10_diemMon3" placeholder="Điểm môn 3">
+                <br><button id="btn_bai10">Kết quả</button>
+                <div class="ketqua">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span class="kqBai10"></span>
+                </div>
+            </div>
+
+            <div class="bai animate__animated animate__fadeIn">
+                <h1>Bài 11: Tính tiền điện, khoảng giá 50kW đầu 500d/kW, 50kW kế 650d/kW, 100kW kế 850d/kW, 150Kw kế 1100d/kW Còn lại 1300d/kW</h1>
+                <input type="text" id="b11_hoTen" placeholder="Họ và tên">
+                <input type="number" id="b11_soKw" placeholder="Nhập số Kw">
+                <br><button id="btn_bai11">Tính tiền điện</button>
+                <div class="ketqua">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span class="kqBai11"></span>
+                </div>
+            </div>
+
+            <div class="bai animate__animated animate__fadeIn">
+                <h1>Bài 12: Tính thuế thu nhập cá nhân</h1>
+                <div style="margin-bottom: 10px;"><img src="./img/12.png" width="100%"></div>
+                <input type="text" id="b12_hoTen" placeholder="Họ và tên">
+                <input type="number" id="b12_thuNhapNam" placeholder="Tổng thu nhập năm">
+                <input type="number" id="b12_nguoiPhuThuoc" placeholder="Số người phụ thuộc">
+                <br><button id="btn_bai12">Tính tiền thuế</button>
+                <div class="ketqua">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span class="kqBai12"></span>
+                </div>
+            </div>
+
+            <div class="bai animate__animated animate__fadeIn">
+                <h1>Bài 13: Tính tiền cáp</h1>
+                <div style="margin-bottom: 10px;"><img src="./img/13.png" width="100%"></div>
+                <select id="b13_khachHang">
+                    <option value="">Chọn loại khách hàng</option>
+                    <option value="1">Nhà dân</option>
+                    <option value="2">Doanh nghiệp</option>
+                </select>
+                <input type="text" id="b13_maKhachHang" placeholder="Nhập mã khác hàng">
+                <input type="number" id="b13_soKenh" placeholder="Số kênh cao cấp">
+                <input type="number" id="b13_soKetNoi" placeholder="Số kết nối" style="display: none;">
+                <br><button id="btn_bai13">Tính tiền cáp</button>
+                <div class="ketqua">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span class="kqBai13"></span>
+                </div>
+            </div>
+
+            <div class="bai animate__animated animate__fadeIn">
+                <h1>Bài 14: Viết chương trình nhập vào 2 số x, n tính tổng: S(n) = x + x^2 + x^3 + … + x^n (Sử dụng vòng
+                    lặp và hàm)</h1>
+                <input type="number" id="b14_soX" placeholder="Nhập số x">
+                <input type="number" id="b14_soN" placeholder="Nhập số n">
+                <br><button id="btn_bai14">Tính tổng</button>
+                <div class="ketqua">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span class="kqBai14"></span>
+                </div>
+            </div>
+
+            <div class="bai animate__animated animate__fadeIn">
+                <h1>Bài 15: Tính giai thừa của số nguyên dương n</h1>
+                <input type="number" id="b15_soN" placeholder="Nhập số n">
+                <br><button id="btn_bai15">Tính</button>
+                <div class="ketqua">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span class="kqBai15"></span>
+                </div>
+            </div>
+
+            <div class="bai animate__animated animate__fadeIn">
+                <h1>Bài 16: In 10 thẻ div: Nếu div nào vị trí chẵn thì background màu đỏ và lẻ thì background màu xanh
+                </h1>
+                <br><button id="btn_bai16">Tạo thẻ</button>
+                <div class="ketqua">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span class="kqBai16"></span>
+                </div>
+            </div>
+
+            <div class="bai animate__animated animate__fadeIn">
+                <h1>Bài 17: In các số nguyên tố từ 1 tới n</h1>
+                <input type="number" id="b17_soN" placeholder="Nhập số n">
+                <br><button id="btn_bai17">In số nguyên tố</button>
+                <div class="ketqua">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span class="kqBai17"></span>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+    </section>
+    <section class="container list">
+        <ul style="list-style-position:inside;">
+            <li>Bài 1: Tính diện tích chu vi hình chữ nhật</li>
+            <li>Bài 2: Tính tổng các ký số của số nhỏ hơn 4 chữ số</li>
+            <li>Bài 3: Sắp xếp 3 số nguyên tăng dần</li>
+            <li>Bài 4: Chương trình chào hỏi</li>
+            <li>Bài 5: Đếm số chẵn, số lẻ</li>
+            <li>Bài 6: Nhận biết tam giác</li>
+            <li>Bài 7: Tìm ngày tháng</li>
+            <li>Bài 8: Đếm số ngày trong tháng</li>
+            <li>Bài 9: Đọc số nhỏ hơn 4 chữ số</li>
+            <li>Bài 10: Quản lý tuyển sinh </li>
+            <li>Bài 11: Tính tiền điện</li>
+            <li>Bài 12: Tính thuế thu nhập cá nhân</li>
+            <li>Bài 13: Tính tiền cáp</li>
+            <li>Bài 14: Viết chương trình nhập vào 2 số x, n tính tổng: S(n) = x + x^2 + x^3 + … + x^n (Sử dụng vòng lặp và hàm)</li>
+            <li>Bài 15: Tính giai thừa của số nguyên dương n</li>
+            <li>Bài 16: In 10 thẻ div: Nếu div nào vị trí chẵn thì background màu đỏ và lẻ thì background màu xanh</li>
+            <li>Bài 17: In các số nguyên tố từ 1 tới n</li>
+        </ul>
+    </section>
+
+
+
+
+
+
+    <script src="./list.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

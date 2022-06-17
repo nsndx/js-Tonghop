@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+.title,
+.list {
+  padding: 20px;
+}
+.title {
+  text-align: center;
+}
+
+.btn {
+  background-color: #aaa;
+  padding: 20px;
+}
+.btn button {
+  width: 100px;
+  height: 40px;
+  margin: 0 10px 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+.btn button:hover {
+  color: brown;
+  transform: scale(1.1);
+}
+.btn button i {
+  color: brown;
+}
+.btn button i:last-of-type {
+  display: none;
+}
+.btn button:first-child i:last-of-type {
+  display: inline-block;
+}
+.btn button:first-child i:first-of-type {
+  display: none;
+}
+
+.content {
+  background: #ddd;
+  padding: 20px;
+}
+.content .bai {
+  display: none;
+}
+.content .bai:first-child {
+  display: block;
+}
+.content h1 {
+  margin-bottom: 20px;
+}
+.content h3 {
+  margin-bottom: 10px;
+  color: brown;
+}
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
+.content input,
+.content select {
+  font-size: 20px;
+  padding: 8px;
+  margin: 0 20px 10px 0;
+  outline: none;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0px 0px 3px 3px #aaa inset;
+  background-color: #eee;
+  max-width: 100%;
+  width: 220px;
+  appearance: none;
+}
+.content input:focus,
+.content select:focus {
+  background-color: #fff;
+  box-shadow: 1px 3px 3px #aaa;
+}
+.content button {
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 20px;
+  background-color: brown;
+  color: #fff;
+  margin-right: 20px;
+}
+.content button:hover {
+  transform: scale(1.1);
+}
+.content .ketqua {
+  font-size: 30px;
+  background-color: #0fd191;
+  border-radius: 6px;
+  line-height: 50px;
+  padding: 5px 5px;
+}
+.content .ketqua i {
+  color: brown;
+  font-size: 20px;
+}
