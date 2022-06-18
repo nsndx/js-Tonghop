@@ -566,17 +566,17 @@ function inSoNguyenTo(id) {
     // output: string
     var ketqua = '';
     // progress
-    var dem = 0
-    for (i = 1; i <= so; i++) {
-        for (j = 1; j <= i; j++) {
+    for (i = 2; i <= so; i++) {
+        var checkSNT = true
+        for (j = 2; j <= Math.sqrt(i); j++) {
             if (i % j == 0) {
-                dem++
+                checkSNT = false
+                break
             }
         }
-        if (dem == 2) {
+        if (checkSNT) {
             ketqua += (i + ' ')
         }
-        dem = 0
     }
     return ketqua;
 }
