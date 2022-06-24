@@ -1,3 +1,69 @@
+var x = document.querySelectorAll('.btn button')
+var y = document.querySelectorAll('.btn .fa-book')
+var z = document.querySelectorAll('.btn .fa-book-open')
+var t = document.querySelectorAll('.content .bai')
+function list(index) {
+    for (var i = 0; i < x.length; i++) {
+        y[i].style.display = 'inline-block'
+        y[index].style.display = 'none'
+        z[i].style.display = 'none'
+        z[index].style.display = 'inline-block'
+        t[i].style.display = 'none'
+        t[index].style.display = 'block'
+    }
+}
+x[0].onclick = function () {
+    list(0)
+}
+x[1].onclick = function () {
+    list(1)
+}
+x[2].onclick = function () {
+    list(2)
+}
+x[3].onclick = function () {
+    list(3)
+}
+x[4].onclick = function () {
+    list(4)
+}
+x[5].onclick = function () {
+    list(5)
+}
+x[6].onclick = function () {
+    list(6)
+}
+x[7].onclick = function () {
+    list(7)
+}
+x[8].onclick = function () {
+    list(8)
+}
+x[9].onclick = function () {
+    list(9)
+}
+x[10].onclick = function () {
+    list(10)
+}
+x[11].onclick = function () {
+    list(11)
+}
+x[12].onclick = function () {
+    list(12)
+}
+x[13].onclick = function () {
+    list(13)
+}
+x[14].onclick = function () {
+    list(14)
+}
+x[15].onclick = function () {
+    list(15)
+}
+x[16].onclick = function () {
+    list(16)
+}
+
 // Bài 1: Tính diện tích chu vi hình chữ nhật
 document.getElementById('btn_bai1').onclick = function () {
     kqBai1 = chuViDienTichHCN('b1_chieuDai', 'b1_chieuRong')

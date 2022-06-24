@@ -8,13 +8,15 @@
     <title>Bài tập JS tổng hợp</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <section class="container title">
-        <h1>Một số bài tập javascript</h1>
-    </section>
+    <header>
+        <a href="./index.html" class="active">Bài tập</a>
+        <a href="./array.html">Bài tập Array</a>
+    </header>
+
     <section class="container">
         <div class="btn">
             <button>
@@ -104,6 +106,7 @@
             </button>
 
         </div>
+
         <div class="content">
             <div class="bai animate__animated animate__fadeIn">
                 <h1>Bài 1: Tính diện tích chu vi hình chữ nhật</h1>
@@ -213,7 +216,8 @@
             </div>
 
             <div class="bai animate__animated animate__fadeIn">
-                <h1>Bài 10: Quản lý tuyển sinh, Đậu nếu tổng điểm lớn hơn hoặc bằng điểm chuẩn và không có điểm môn nào bằng 0</h1>
+                <h1>Bài 10: Quản lý tuyển sinh, Đậu nếu tổng điểm lớn hơn hoặc bằng điểm chuẩn và không có điểm môn nào
+                    bằng 0</h1>
                 <input type="number" id="b10_diemChuan" placeholder="Nhập điểm chuẩn">
                 <select id="b10_khuVuc">
                     <option value="0">Chọn khu vực</option>
@@ -238,7 +242,8 @@
             </div>
 
             <div class="bai animate__animated animate__fadeIn">
-                <h1>Bài 11: Tính tiền điện, khoảng giá 50kW đầu 500d/kW, 50kW kế 650d/kW, 100kW kế 850d/kW, 150Kw kế 1100d/kW Còn lại 1300d/kW</h1>
+                <h1>Bài 11: Tính tiền điện, khoảng giá 50kW đầu 500d/kW, 50kW kế 650d/kW, 100kW kế 850d/kW, 150Kw kế
+                    1100d/kW Còn lại 1300d/kW</h1>
                 <input type="text" id="b11_hoTen" placeholder="Họ và tên">
                 <input type="number" id="b11_soKw" placeholder="Nhập số Kw">
                 <br><button id="btn_bai11">Tính tiền điện</button>
@@ -321,15 +326,8 @@
                 </div>
             </div>
 
-
-
-
-
-
-
-
-        </div>
     </section>
+
     <section class="container list">
         <ul style="list-style-position:inside;">
             <li>Bài 1: Tính diện tích chu vi hình chữ nhật</li>
@@ -345,10 +343,12 @@
             <li>Bài 11: Tính tiền điện</li>
             <li>Bài 12: Tính thuế thu nhập cá nhân</li>
             <li>Bài 13: Tính tiền cáp</li>
-            <li>Bài 14: Viết chương trình nhập vào 2 số x, n tính tổng: S(n) = x + x^2 + x^3 + … + x^n (Sử dụng vòng lặp và hàm)</li>
+            <li>Bài 14: Viết chương trình nhập vào 2 số x, n tính tổng: S(n) = x + x^2 + x^3 + … + x^n (Sử dụng vòng lặp
+                và hàm)</li>
             <li>Bài 15: Tính giai thừa của số nguyên dương n</li>
             <li>Bài 16: In 10 thẻ div: Nếu div nào vị trí chẵn thì background màu đỏ và lẻ thì background màu xanh</li>
             <li>Bài 17: In các số nguyên tố từ 1 tới n</li>
+
         </ul>
     </section>
 
@@ -357,8 +357,7 @@
 
 
 
-    <script src="./list.js"></script>
-    <script src="./main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

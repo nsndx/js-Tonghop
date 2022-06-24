@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BC32E_NguyenDinhTai_BT_JS_buoi_7_8</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/styleArray.css">
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">Bài tập</a>
+        <a href="./array.html" class="active">Bài tập Array</a>
+    </header>
+
+    <div class="container">
+        <div class="top">
+            <h2>Cho người dùng nhập vào số nguyên và lưu trữ trong mảng.</h2>
+            <input type="number" placeholder="Nhập số n">
+            <button>Thêm số</button>
+            <p>
+                <i class="fa fa-hand-point-right"></i>
+                <span class="soThem"></span>
+            </p>
+        </div>
+        <div class="bottom">
+            <div class="bai">
+                <div class="title">
+                    <h3> 1. Tổng các số dương trong mảng. </h3>
+                    <div class="icon">
+                        <i class="fa fa-angle-down"></i>
+                        <i class="fa fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="main">
+                    <button id="btn_bai1">Tính tổng</button>
+                    <p>
+                        <i class="fa fa-hand-point-right"></i>
+                        <span class="kqBai1"></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="bai">
+                <div class="title">
+                    <h3> 2. Đếm có bao nhiêu số dương trong mảng. </h3>
+                    <div class="icon">
+                        <i class="fa fa-angle-down"></i>
+                        <i class="fa fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="main">
+                    <button id="btn_bai2">Đếm số</button>
+                    <p>
+                        <i class="fa fa-hand-point-right"></i>
+                        <span class="kqBai2"></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="bai">
+                <div class="title">
+                    <h3> 3. Tìm số nhỏ nhất trong mảng. </h3>
+                    <div class="icon">
+                        <i class="fa fa-angle-down"></i>
+                        <i class="fa fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="main">
+                    <button id="btn_bai3">Tìm số</button>
+                    <p>
+                        <i class="fa fa-hand-point-right"></i>
+                        <span class="kqBai3"></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="bai">
+                <div class="title">
+                    <h3> 4. Tìm số dương nhỏ nhất trong mảng. </h3>
+                    <div class="icon">
+                        <i class="fa fa-angle-down"></i>
+                        <i class="fa fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="main">
+                    <button id="btn_bai4">Tìm số</button>
+                    <p>
+                        <i class="fa fa-hand-point-right"></i>
+                        <span class="kqBai4"></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="bai">
+                <div class="title">
+                    <h3> 5. Tìm số chẵn cuối cùng trong mảng. Nếu mảng không có giá trị chẵn thì trả về -1. </h3>
+                    <div class="icon">
+                        <i class="fa fa-angle-down"></i>
+                        <i class="fa fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="main">
+                    <button id="btn_bai5">Tìm số</button>
+                    <p>
+                        <i class="fa fa-hand-point-right"></i>
+                        <span class="kqBai5"></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="bai">
+                <div class="title">
+                    <h3> 6. Đổi chỗ 2 giá trị trong mảng theo vị trí (Cho nhập vào 2 vị trí muốn đổi chỗ giá trị). </h3>
+                    <div class="icon">
+                        <i class="fa fa-angle-down"></i>
+                        <i class="fa fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="main">
+                    <input type="number" placeholder="Vị trí" id="viTri1">
+                    <input type="number" placeholder="Vị trí" id="viTri2">
+                    <button id="btn_bai6">Đổi</button>
+                    <p>
+                        <i class="fa fa-hand-point-right"></i>
+                        <span class="kqBai6"></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="bai">
+                <div class="title">
+                    <h3> 7. Sắp xếp mảng theo thứ tự tăng dần. </h3>
+                    <div class="icon">
+                        <i class="fa fa-angle-down"></i>
+                        <i class="fa fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="main">
+                    <button id="btn_bai7">Sắp xếp</button>
+                    <p>
+                        <i class="fa fa-hand-point-right"></i>
+                        <span class="kqBai7"></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="bai">
+                <div class="title">
+                    <h3> 8. Tìm số nguyên tố đầu tiên trong mảng. Nếu mảng không có số nguyên tố thì trả về – 1. </h3>
+                    <div class="icon">
+                        <i class="fa fa-angle-down"></i>
+                        <i class="fa fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="main">
+                    <button id="btn_bai8">Tìm số</button>
+                    <p>
+                        <i class="fa fa-hand-point-right"></i>
+                        <span class="kqBai8"></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="bai">
+                <div class="title">
+                    <h3> 9. Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên. </h3>
+                    <div class="icon">
+                        <i class="fa fa-angle-down"></i>
+                        <i class="fa fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="main">
+                    <input type="number" id="b9_nhapSo" placeholder="Nhập số thực">
+                    <button id="b9_themSo">Thêm số</button>
+                    <p style="margin-bottom: 20px;">
+                        <i class="fa fa-hand-point-right"></i>
+                        <span id="b9_soThem"></span>
+                    </p>
+                    <button id="btn_bai9">Tìm số</button>
+                    <p>
+                        <i class="fa fa-hand-point-right"></i>
+                        <span class="kqBai9"></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="bai">
+                <div class="title">
+                    <h3> 10. So sánh số lượng số dương và số lượng số âm xem số nào nhiều hơn. </h3>
+                    <div class="icon">
+                        <i class="fa fa-angle-down"></i>
+                        <i class="fa fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="main">
+                    <button id="btn_bai10">So sánh</button>
+                    <p>
+                        <i class="fa fa-hand-point-right"></i>
+                        <span class="kqBai10"></span>
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <script src="./js/mainArray.js"></script>
+</body>
+
+</html>
